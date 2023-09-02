@@ -1,0 +1,874 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    width: 95%;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mobile-nav,
+#myNav {
+    display: none;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    background: #f8faff;
+    padding: 1.5rem 0;
+}
+
+nav .logo {
+    flex: 0 0 15%;
+    max-width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+nav .navlink {
+    flex: 0 0 65%;
+    max-width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+nav .contact {
+    flex: 0 0 20%;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+nav .navlink a,
+nav .contact a {
+    padding-right: 2.2rem;
+    font-weight: 600;
+}
+
+nav .contact a {
+    text-decoration: underline;
+}
+
+/* Tablet & Mobile Navigation Bar */
+nav .logo-view,
+nav .hamburger {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+nav .hamburger {
+    justify-content: end;
+}
+
+/* Startup page */
+.startup {
+    background: rgba(179,199,253,.09);
+    background-image: url(assets/startup.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.startup .startup-text,
+.startup .startup-image {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.startup .startup-text h1 {
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 65px;
+    letter-spacing: 0.5px;
+    color: #0967d2;
+    margin: 4.5rem 0 2.5rem 0;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.1);
+}
+
+.startup .startup-text .c {
+    position: relative;
+    left: -12px;
+}
+
+.startup .startup-text img {
+    position: relative;
+    top: -15px;
+    left: -40px;
+}
+
+.startup .startup-text .e {
+    position: relative;
+    left: -95px;
+}
+
+.startup .startup-text p {
+    line-height: 25px;
+    padding-right: 4rem;
+    font-weight: 500;
+}
+
+.startup .startup-text .cta {
+    flex: 0 0 40%;
+    max-width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.startup .startup-text button {
+    background: #204ecf;
+    color: white;
+    width: 200px;
+    padding: 12px 25px;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.startup .startup-text button a {
+    display: flex;
+    align-items: center;
+}
+
+.startup .startup-text button svg {
+    padding-left: 35px;
+}
+
+.startup .startup-text .arrow img {
+    left: -35px;
+}
+
+.startup .startup-text .company {
+    padding-bottom: 40px;
+}
+
+.startup .startup-text .company {
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.startup .company .company-name {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 25px;
+}
+
+.startup .company .company-image {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.startup .company-image img {
+    width: 65%;
+    top: 0;
+    left: 0;
+}
+
+.startup .startup-image img {
+    width: 100%;
+}
+
+/* Intro */
+.intro {
+    margin: 12rem 0;
+}
+
+.intro .process {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.intro .video {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.intro .process h2 {
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-bottom: 2rem;
+}
+
+.intro .process p {
+    line-height: 25px;
+    padding-right: 4rem;
+    font-weight: 500;
+}
+
+.intro .process button {
+    background: white;
+    border: 1px solid #00349b;
+    color: #204ecf;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.intro .process button a {
+    display: flex;
+    align-items: center;
+}
+
+.intro .process button svg {
+    padding-left: 35px;
+}
+
+.intro iframe {
+    width: 100%;
+}
+
+/* Talent */
+.talent h2 {
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.talent p {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.talent .prodevs-talent {
+    margin: 4rem 0;
+}
+
+.talent .prodevs-talent .card {
+    flex: 0 0 16.66%;
+    max-width: 16.66%;
+}
+
+.talent .prodevs-talent .cover {
+    padding: 0 10px;
+}
+
+.talent .prodevs-talent .card-details {
+    background: #00349b;
+    color: white;
+    font-size: 14px;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.talent .prodevs-talent img {
+    width: 50%;
+    padding-bottom: 40px;
+}
+
+/* Solution */
+.solution {
+    margin: 0 0 5rem 0;
+}
+
+.solution h2 {
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-bottom: 0.1rem;
+}
+
+.solution p {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 1.8rem;
+}
+
+.solution .prodevs-solution .card {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.solution .prodevs-solution .cover {
+    padding: 0 10px 20px 10px;
+}
+
+.solution .prodevs-solution .card-details {
+    background: #fff5ea;
+    padding: 40px 35px;
+    font-weight: 12px;
+}
+
+.solution .card .solution-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.solution .card .solution-text {
+    height: 120px;
+}
+
+.solution .learn a {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.solution a svg {
+    padding-left: 15px;
+}
+
+/* Numbers */
+.numbers {
+    background: black;
+    color: white;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+}
+
+.numbers .card {
+    flex: 0 0 33%;
+    max-width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 150px;
+}
+
+.numbers .card .number-title {
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.numbers .card:first-child,
+.numbers .card:nth-child(2),
+.numbers .card:nth-child(4),
+.numbers .card:nth-child(5) {
+    border-right: 1px solid #252525;
+}
+
+.numbers .card:nth-child(4),
+.numbers .card:nth-child(5),
+.numbers .card:nth-child(6) {
+    border-top: 1px solid #252525;
+}
+
+/* Results */
+.results h2 {
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.results p {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.results .company {
+    margin: 4rem 0 1.5rem 0;
+}
+
+.results .company .card {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.results .company .cover {
+    padding: 0 10px;
+}
+
+.results .company .card-details {
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.1);
+}
+
+.results .card-details img {
+    width: 100%;
+}
+
+.results .card-details .details {
+    height: 120px;
+    padding: 25px 25px 0 25px;
+    font-size: 18px;
+}
+
+.results .card-details .readmore {
+    padding: 0 25px 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.results .card-details .readmore svg {
+    padding-left: 15px;
+}
+
+.results .view {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 15px 50px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #003cb1;
+}
+
+.results .view svg {
+    padding-left: 15px;
+}
+
+/* Blog */
+.blog {
+    margin: 4rem 0;
+}
+
+.blog h2 {
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    color: #212121;
+    margin-bottom: 0.1rem;
+}
+
+.blog p {
+    line-height: 25px;
+    padding-right: 4rem;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 1.8rem;
+}
+
+.blog .prodevs-blog .cover {
+    padding: 0 10px;
+}
+
+.blog .prodevs-blog .progress {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.blog .prodevs-blog .talents-invest {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.blog .prodevs-blog .progress img,
+.blog .prodevs-blog .talents-invest img {
+    width: 100%;
+}
+
+.blog .more {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 10px 50px 0;
+}
+
+.blog .more a {
+    color: #00349b;
+    font-weight: 600;
+}
+
+/* Get started */
+.start {
+    margin: 5rem 0;
+}
+.start .cover {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0 8rem 0;
+}
+
+.start h2 {
+    font-weight: 700;
+    font-size: 45px;
+    letter-spacing: 0.5px;
+    margin-top: 6rem;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.start p {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.start button {
+    background: white;
+    color: black;
+    width: 200px;
+    padding: 12px 25px;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Newsletter */
+.newsletter {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 3rem 0;
+    margin: 1rem 0;
+}
+
+.newsletter .subscribe {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newsletter .subscribe .sub-title {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.newsletter .subscribe .title {
+    font-size: 25px;
+}
+
+.newsletter form .email {
+    width: 60%;
+    padding: 12px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #003cb1;
+    font-family: 'Figtree', sans-serif;
+}
+
+input[type=email]:focus{
+    outline: 0.5px solid #003cb1;
+}
+
+.newsletter form .submit {
+    background: #003cb1;
+    color: white;
+    width: 30%;
+    padding: 14px 25px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: -10px;
+}
+
+/* footer */
+footer {
+    background: #081536;
+    color: #b3b3b3;
+    padding-top: 4rem;
+}
+
+footer a {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+footer .main {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+footer .sub-links {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+footer .sub-links .footer-navlink {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-bottom: 50px;
+}
+
+footer .sub-links .footer-navlink:nth-child(6) {
+    flex: 0 0 50%;
+    max-width: 50%; 
+}
+
+footer .main .verify {
+    width: 100px;
+    padding-top: 15px;
+}
+
+footer .main .nigeria,
+footer .main .us {
+    width: 15px;
+}
+
+footer .main .logo {
+    padding-bottom: 40px;
+}
+
+footer .title {
+    padding-bottom: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+footer .sub-links a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 12px;
+    border-top: 1px solid #202443;
+}
+
+@media screen and (max-width: 1280px) {
+    .main-nav,
+    .startup .startup-image,
+    br,
+    .intro .process button svg {
+        display: none;
+    }
+
+    .mobile-nav,
+    #myNav {
+        display: initial;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .overlay a {
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #003cb1;
+        display: block;
+        transition: 0.3s;
+        font-family: 'Figtree', sans-serif;
+    }
+    
+    .overlay a:hover, 
+    .overlay a:focus {
+        text-decoration: underline;
+    }
+    
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+    } 
+
+    .startup .startup-text {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .intro {
+        margin: 0;
+    }
+
+    .intro .process,
+    .intro .video,
+    .solution .prodevs-solution .card,
+    .newsletter .subscribe,
+    footer .main,
+    footer .sub-links {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .intro .process h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    
+    .intro .process p {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .intro .process button {
+        margin-bottom: 30px;
+    }
+
+    .talent .prodevs-talent .card-details {
+        text-align: center;
+    }
+
+    .talent .prodevs-talent .card {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding-bottom: 15px;
+    }
+
+    .numbers .card:first-child,
+    .numbers .card:nth-child(2),
+    .numbers .card:nth-child(4),
+    .numbers .card:nth-child(5) {
+        border-right: 0;
+    }
+
+    .numbers .card:nth-child(4),
+    .numbers .card:nth-child(5),
+    .numbers .card:nth-child(6) {
+        border-top: 0;
+    }
+
+    .numbers .card,
+    .results .company .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .results .company .card,
+    .newsletter .subscribe {
+        margin-bottom:  15px;
+    }
+
+    footer .main {
+        padding-bottom: 40px;
+    }
+
+    footer .sub-links .footer-navlink {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding-bottom: 50px;
+    }
+
+    footer .footer-navlink .footer-navlink {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .startup .startup-text .arrow img,
+    .startup .startup-text button svg {
+        display: none;
+    }
+
+    .talent .prodevs-talent .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .solution .card .solution-text {
+        height: 175px;
+    }
+
+    .results .company .card,
+    .blog .prodevs-blog .talents-invest,
+    footer .sub-links .footer-navlink:nth-child(6) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .blog .prodevs-blog .talents-invest {
+        padding-bottom: 20px;
+    }
+
+    .newsletter form .email {
+        width: 50%;
+    }
+
+    footer .sub-links .footer-navlink {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    footer .footer-navlink .footer-navlink {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
