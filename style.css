@@ -221,6 +221,13 @@ nav .hamburger {
     font-weight: 500;
 }
 
+.intro .process .button {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .intro .process button {
     background: white;
     border: 1px solid #00349b;
@@ -373,6 +380,11 @@ nav .hamburger {
     font-size: 35px;
     font-weight: 600;
     padding-bottom: 15px;
+    text-align: center;
+}
+
+.numbers .card .number-text {
+    text-align: center;
 }
 
 .numbers .card:first-child,
@@ -686,7 +698,6 @@ footer .copyright {
 @media screen and (max-width: 1280px) {
     .main-nav,
     .startup .startup-image,
-    br,
     .intro .process button svg {
         display: none;
     }
@@ -717,7 +728,6 @@ footer .copyright {
         top: 25%;
         width: 100%;
         text-align: center;
-        margin-top: 30px;
     }
     
     .overlay a {
@@ -777,8 +787,12 @@ footer .copyright {
         padding-right: 0;
     }
 
+    .intro .process .button {
+        justify-content: center;
+    }
+
     .intro .process button {
-        margin-bottom: 30px;
+        margin: 20px 0 50px 0;
     }
 
     .talent .prodevs-talent .card-details {
@@ -834,8 +848,14 @@ footer .copyright {
 
 @media screen and (max-width: 750px) {
     .startup .startup-text .arrow img,
-    .startup .startup-text button svg {
+    .startup .startup-text button svg,
+    br {
         display: none;
+    }
+
+    .startup .startup-text h1 {
+        font-size: 42px;
+        margin: 4.5rem 0 1rem 0;
     }
 
     .talent .prodevs-talent .card {
@@ -844,9 +864,10 @@ footer .copyright {
     }
 
     .solution .card .solution-text {
-        height: 175px;
+        height: 225px;
     }
 
+    .startup .startup-text,
     .results .company .card,
     .blog .prodevs-blog .talents-invest,
     footer .sub-links .footer-navlink:nth-child(6) {
