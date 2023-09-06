@@ -858,7 +858,8 @@ footer .copyright {
         margin: 4.5rem 0 1rem 0;
     }
 
-    .talent .prodevs-talent .card {
+    .talent .prodevs-talent .card,
+    footer .sub-links .footer-navlink {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -881,11 +882,6 @@ footer .copyright {
 
     .newsletter form .email {
         width: 50%;
-    }
-
-    footer .sub-links .footer-navlink {
-        flex: 0 0 50%;
-        max-width: 50%;
     }
 
     footer .footer-navlink .footer-navlink {
